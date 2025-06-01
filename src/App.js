@@ -8,6 +8,13 @@ import JobsList from './components/JobsList';
 import JobDetail from './components/JobDetail';
 import Avuleti from './components/Avuleti';
 
+/* # You already did this, but if not:
+git branch -M main
+
+# Then:
+git push -u origin main
+*/
+
 function App() {
   return (
     <div>
