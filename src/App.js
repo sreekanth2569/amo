@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Dashboard from './components/Dashboard';
+import Analytics from './components/Analytics';
+import Settings from './components/Settings';
+import JobsList from './components/JobsList';
+import JobDetail from './components/JobDetail';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav style={{ marginBottom: '20px' }}>
+        <Link to='/'>Home</Link> | <Link to='/about'>About</Link> |{' '}
+        <Link to='/dashboard'>Dashboard</Link> | <Link to='/jobs'>Jobs</Link>
+      </nav>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+
+        {/* Dashboard with nested routes */}
+        <Route path='/dashboard' element={<Dashboard />}>
+          <Route path='analytics' element={<Analytics />} />
+          <Route path='settings' element={<Settings />} />
+        </Route>
+
+        {/* Jobs and dynamic job detail */}
+        <Route path='/jobs' element={<JobsList />} />
+        <Route path='/jobs/:id' element={<JobDetail />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Frontend Developer",
+    "company": "Tech Solutions Inc.",
+    "location": "New York, NY",
+    "salary": "$85,000 - $100,000",
+    "description": "Develop user interfaces with React.js"
+  },
+  {
+    "id": "2",
+    "title": "Backend Developer",
+    "company": "Cloud Corp",
+    "location": "San Francisco, CA",
+    "salary": "$95,000 - $110,000",
+    "description": "Work with Node.js and MongoDB on scalable APIs"
+  },
+  {
+    "id": "3",
+    "title": "Full Stack Developer",
+    "company": "DevWorks",
+    "location": "Remote",
+    "salary": "$100,000 - $120,000",
+    "description": "Build full-stack web applications"
+  }
+]
