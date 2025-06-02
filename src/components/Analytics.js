@@ -1,3 +1,3 @@
 export default function Analytics() {
-  return <h3>Analytics Section</h3>;
+  return <h3>Analytics Section oooo</h3>;
 }

@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Avuleti = () => {
+  const navigate = useNavigate();
+
   return (
-    <dih1v>
-      <h1>avuleti</h1>
-    </dih1v>
+    <div>
+      <h1>po</h1>
+      <button onClick={() => navigate('/dashboard')}>dashboard</button>
+    </div>
   );
 };
 

@@ -7,7 +7,9 @@ import Settings from './components/Settings';
 import JobsList from './components/JobsList';
 import JobDetail from './components/JobDetail';
 import Avuleti from './components/Avuleti';
+
 import Emi from './components/Emi';
+import ErrorPage from './components/ErrorPage';
 
 /* # You already did this, but if not:
 git branch -M main
@@ -36,6 +38,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/avuleti' element={<Avuleti />} />
         <Route path='/emi' element={<Emi />} />
+        <Route path='*' element={<ErrorPage />} />
 
         {/* Dashboard with nested routes */}
         <Route path='/dashboard' element={<Dashboard />}>
